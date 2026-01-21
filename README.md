@@ -18,20 +18,22 @@ Create two isolated projects demonstrating remote-ui architecture for sandboxed 
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/remote-ui/remote-ui.git
+git clone https://github.com/cang-pham-codeleap/remote-storefont.git
 ```
 
-2. Start the host app:
+2. Start the extension app:
+```bash
+cd extension-app
+npm run build
+cd dist
+npx serve -p 3001 --cors
+```
+
+3. Start the host app:
 ```bash
 cd host-app
 npm install
 npm run dev
-```
-
-3. Start the extension app:
-```bash
-cd extension-app/dist
-npx serve -p 3001 --cors
 ```
 
 4. Open http://localhost:5173 in your browser to see the host app.
