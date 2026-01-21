@@ -1,0 +1,36 @@
+/**
+ * Card component styles.
+ * Uses modern CSS with subtle shadows and animations.
+ */
+
+.remote-card {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+
+  /* Appearance */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  box-shadow:
+    0 10px 40px rgba(102, 126, 234, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Text */
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* Animation */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.remote-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 48px rgba(102, 126, 234, 0.4),
+    0 6px 16px rgba(0, 0, 0, 0.15);
+}
